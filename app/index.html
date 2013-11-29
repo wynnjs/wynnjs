@@ -21,7 +21,9 @@
 
 
         <div class="hero-unit">
-	<img src="https://scontent-a-lhr.xx.fbcdn.net/hphotos-prn1/s720x720/526397_10152749138320271_1783787600_n.jpg"/>
+	<img src="https://scontent-a-lhr.xx.fbcdn.net/hphotos-prn1/s720x720/526397_10152749138320271_1783787600_n.jpg" />
+
+    <button id="kitten-button">Activate Kitten</button>
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
@@ -41,10 +43,12 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/fartscroll.js"></script>
+        <script src="scripts/kittens.js"></script>
         <!-- endbuild -->
 
         <script>
             fartscroll();
+            document.getElementById('kitten-button').onclick = function() { kittens.activate(); }
         </script>
 </body>
 </html>
